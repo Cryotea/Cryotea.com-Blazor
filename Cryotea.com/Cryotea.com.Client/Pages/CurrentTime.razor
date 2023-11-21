@@ -1,0 +1,18 @@
+﻿@rendermode InteractiveWebAssembly
+<p>@CurrentDate</p>
+
+@code {
+
+    string CurrentDate ;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //while(true)
+       // {
+            CurrentDate = DateTime.Now.ToString("ddd HH:mm:ss dd/MM/yyyy");
+            StateHasChanged();
+            await Task.Delay(1000); // Update time every second
+       // }
+    }
+    
+}
