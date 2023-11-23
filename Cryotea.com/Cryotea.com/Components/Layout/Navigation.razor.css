@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Teletextfont' ;
-    src: url('/Cryotea.com/Cryotea.com.Client/EuropeanTeletext.ttf') format(truetype);
+    src: url('fonts/EuropeanTeletext.ttf') format(truetype);
   }
    * {font-family: 'Teletextfont' ;}
    
