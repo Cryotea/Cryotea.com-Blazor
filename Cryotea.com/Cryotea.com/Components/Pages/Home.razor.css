@@ -4,21 +4,6 @@
 }
 * {font-family: 'Teletextfont' ;}
   
-
-    
-
-  
-.header1 {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 20px;
-    width: 600px;
-    color: white;
-    text-align: left;
-    margin: auto;
-    
-}
-  
 #input_p_number {
   border:none;
   background-color:rgb(71, 71, 71) ;
@@ -32,7 +17,6 @@
   width: 600px;
   margin:auto
 }
-  
   
   
 .color1 {
@@ -49,7 +33,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px; height: 300px;
+    gap: 20px; 
+    height: 100%;
     justify-content: center;
     align-items: center;
     color: white;
