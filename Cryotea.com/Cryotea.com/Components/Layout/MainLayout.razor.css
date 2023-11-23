@@ -1,6 +1,16 @@
-.main{
-    
+main {
+    height: 100%;
+}
+
+.main {
     background-color: rgb(71, 71, 71);
+    height: 100%;
+}
+
+#flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #blazor-error-ui {
@@ -15,9 +25,9 @@
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
