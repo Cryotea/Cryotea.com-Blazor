@@ -1,9 +1,9 @@
-﻿
+﻿@rendermode InteractiveWebAssembly
+
 <p>@currentDateTime</p>
 
 @code {
-
-private string currentDateTime = DateTime.Now.ToString("ddd HH:mm:ss dd/MM/yyyy");
+    private string currentDateTime = DateTime.Now.ToString("ddd HH:mm:ss dd/MM/yyyy");
 
     protected override Task OnInitializedAsync()
     {
