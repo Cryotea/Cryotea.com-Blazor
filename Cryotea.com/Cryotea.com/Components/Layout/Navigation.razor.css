@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Teletextfont' ;
+    src: url('/Cryotea.com/Cryotea.com.Client/EuropeanTeletext.ttf') format(truetype);
+  }
+   * {font-family: 'Teletextfont' ;}
+   
 h1 {
     background-color: brown;
     display: flex;

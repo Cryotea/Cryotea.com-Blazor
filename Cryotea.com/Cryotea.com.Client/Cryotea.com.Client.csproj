@@ -20,4 +20,10 @@
     <_ContentIncludedByDefault Remove="Pages\CurrentTime.razor" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="fonts\EuropeanTeletext.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
