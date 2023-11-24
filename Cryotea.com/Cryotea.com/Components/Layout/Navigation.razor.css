@@ -1,17 +1,28 @@
 @font-face {
     font-family: 'Teletextfont' ;
     src: url('fonts/EuropeanTeletext.ttf') format(truetype);
-  }
-   * {font-family: 'Teletextfont' ;}
+}
+* {font-family: 'Teletextfont' ;}
    
 h1 {
-    background-color: brown;
+    background-color:rgb(71, 71, 71) ;
+    color: white;
     display: flex;
     gap: 20px;
-    color: white;
     text-align: center; 
     margin: 0; 
     padding: 20px; 
     width: 100%; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    font-size:large; 
+}
+
+.color1 {
+    color: rgb(0, 225, 255);
+    text-decoration: none;
+}
+  
+.color2 {
+  color: rgb(0, 255, 76);
+  text-decoration: none;
 }
