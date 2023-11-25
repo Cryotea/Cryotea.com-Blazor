@@ -1,0 +1,58 @@
+#top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; 
+    height: 100%;
+    justify-content: center;
+    align-items: top;
+    color:white;
+}
+
+#bottem{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; 
+    height: 100%;
+    justify-content: center;
+    align-items: top;
+    color:white;
+}
+
+#colorYT{
+    color:red;
+    text-decoration: none;
+}
+
+#colorTwitch{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+#colorGithub{
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+}
+
+#text1{
+    height: 15%;
+    width: 15%;
+}
+
+#text2{
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    width: 15%;
+}
+
+#text3{
+    height: 15%;
+    width: 15%;
+}
+
+#text4{
+    height: 15%;
+    width: 15%;
+}
