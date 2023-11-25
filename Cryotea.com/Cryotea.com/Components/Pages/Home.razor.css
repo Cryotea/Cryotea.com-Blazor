@@ -47,6 +47,8 @@
 }
   
 #text3 {
+    display: flex;
+    flex-direction: column;
     height: 15%;
     width: 15%; 
 }
@@ -59,5 +61,8 @@
 p span.c1 {color: #5BCEFA;}
 p span.c2 {color: #F5A9B8;}
 p span.c3 {color: #FFFFFF;}
-p span.c4 {color: #F5A9B8;}
-p span.c5 {color: #5BCEFA;}
+
+p span.c4{color: #fff430}
+p span.c5{color: #ffffff}
+p span.c6{color: #9c59d1}
+p span.c7{color: #292929}
