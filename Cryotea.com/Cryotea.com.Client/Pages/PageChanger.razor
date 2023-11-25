@@ -1,6 +1,5 @@
 ﻿@rendermode InteractiveWebAssembly
 
-@inject IJSRuntime JSRuntime
 @inject NavigationManager NavigationManager
 
 <p>@thisPageNumber</p>
@@ -40,7 +39,7 @@
         if (e.Key == "Enter" && pageNumberInput.HasValue)
         {
             string url = $"/{pageNumberInput}"; // Use a relative path
-            await JSRuntime.InvokeVoidAsync("window.location.assign", url);
+            NavigationManager.NavigateTo(url);
         }
     }
 }
