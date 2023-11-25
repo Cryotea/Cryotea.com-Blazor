@@ -2,11 +2,11 @@
 
 @inject NavigationManager NavigationManager
 
-<p>@thisPageNumber</p>
-<input type="text" @bind-value="pageInput" @oninput="InputValueChanged" @onkeypress="KeyPressed" />
+<p class="headercontentchild">@thisPageNumber</p>
+<input id="PagenumberInput" class="headercontentchild" type="text" @bind-value="pageInput" @oninput="InputValueChanged" @onkeypress="KeyPressed" />
 
 @code {
-    string pageInput;
+    string pageInput = "100";
 
     int thisPageNumber = 100;
 

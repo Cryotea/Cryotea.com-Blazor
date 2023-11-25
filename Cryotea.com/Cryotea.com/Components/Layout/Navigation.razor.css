@@ -4,25 +4,25 @@
 }
 * {font-family: 'Teletextfont' ;}
    
-h1 {
+#headercontent {
     background-color:rgb(71, 71, 71) ;
     color: white;
     display: flex;
     gap: 20px;
     text-align: center; 
+    justify-content: center;
     margin: 0; 
     padding: 20px; 
     width: 100%; 
     box-sizing: border-box;
     font-size:large; 
+    align-items: baseline;
 }
 
-.color1 {
-    color: rgb(0, 225, 255);
-    text-decoration: none;
+.headercontentchild{
+    
 }
-  
-.color2 {
-  color: rgb(0, 255, 76);
-  text-decoration: none;
+
+h1{
+    font-size:large;
 }
