@@ -3,16 +3,16 @@
 @inject NavigationManager NavigationManager
 
 <p class="headercontentchild color2">@thisPageNumber</p>
-<input id="PagenumberInput" class="headercontentchild" type="text" @bind-value="pageInput" @oninput="InputValueChanged" @onkeypress="KeyPressed" />
+<input id="PagenumberInput" class="headercontentchild" type="text" @bind-value="pageInput" @oninput="InputValueChanged" @onkeypress="KeyPressed"/>
 
 @code {
-    string pageInput = "100";
+    public string pageInput = "100";
 
-    int thisPageNumber = 100;
+    public string thisPageNumber = "100";
 
     int? pageNumberInput = null;
 
-    
+
     private void InputValueChanged(ChangeEventArgs e)
     {
         pageInput = e.Value.ToString();
@@ -42,4 +42,40 @@
             NavigationManager.NavigateTo(url);
         }
     }
+
+    protected override Task OnInitializedAsync()
+    {
+        string currentUrl;
+        currentUrl = NavigationManager.Uri;
+        string urlNumber = currentUrl.Split("/")[^1];
+        if (int.TryParse(urlNumber, out _))
+        {
+            pageInput = urlNumber;
+            thisPageNumber = urlNumber;
+        }
+
+        else
+        {
+            switch (urlNumber)
+            {
+                case "home":
+                    pageInput = "100";
+                    thisPageNumber = "100";
+                    break;
+
+                case "links":
+                    pageInput = "101";
+                    thisPageNumber = "101";
+                    break;
+
+                default:
+                    pageInput = "000";
+                    thisPageNumber = "000";
+                    break;
+            }
+        }
+        StateHasChanged();
+        return Task.CompletedTask;
+    }
+
 }
